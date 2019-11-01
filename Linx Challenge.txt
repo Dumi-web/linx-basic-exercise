@@ -1,0 +1,147 @@
+Task 1
+
+1. dumisani@Dumisani:~$ ls
+cohort.md  Desktop  Documents  Downloads  javaPractice  Music  Pictures  Public  recruits.md  summary.md  Templates  umuzi.md  Videos  workspace
+
+2. dumisani@Dumisani:~$ pwd
+/home/dumisani
+
+3. dumisani@Dumisani:~$ mkdir workspace
+   dumisani@Dumisani:~$ cd workspace/
+
+4. dumisani@Dumisani:~/workspace$ ls
+   dumisani@Dumisani:~/workspace$ 
+
+5. touch README.md
+
+6. cp README.md CHANGELOG.md
+
+Task 2
+
+1. dumisani@Dumisani:~/workspace$ touch exercise.md
+
+2. dumisani@Dumisani:~/workspace$ mv exercise.md /tmp
+
+3. dumisani@Dumisani:~/workspace$ cd ~
+   dumisani@Dumisani:~$ rm /tmp/exercise.md 
+
+Task 3
+
+1 & 2. dumisani@Dumisani:~/workspace$ cat > umuzi.md
+Umuzi is such a great space to be in.
+dumisani@Dumisani:~/workspace$ cat > recruits.md
+The recruits are awesome people.
+dumisani@Dumisani:~/workspace$ cat > cohort.md
+I am in cohort 18 and i will be doing java.
+
+3.dumisani@Dumisani:~/workspace$ cat umuzi.md recruits.md cohort.md 
+Umuzi is such a great space to be in.
+The recruits are awesome people.
+I am in cohort 18 and i will be doing java.
+
+4. dumisani@Dumisani:~/workspace$ cat umuzi.md recruits.md cohort.md | sort > summary.md
+
+5. dumisani@Dumisani:~/workspace$ cat >> summary.md
+The End
+
+Task 4
+
+1. dumisani@Dumisani:~$ sudo updatedb
+dumisani@Dumisani:~$ locate umuzi
+/home/dumisani/umuzi.md
+/home/dumisani/workspace/umuzi.md
+
+2. dumisani@Dumisani:~$ locate umuzi >> cat > search_results.md
+
+Task 5
+
+1. dumisani@Dumisani:~$ cd Documents/
+dumisani@Dumisani:~/Documents$ cat > pad.md
+
+2. dumisani@Dumisani:~/Documents$ cd ../Desktop/
+dumisani@Dumisani:~/Desktop$ mkdir work
+
+3. dumisani@Dumisani:~/Desktop$ cp ../Documents/pad.md pad_copy.md
+
+4. dumisani@Dumisani:~/Desktop$ locate updatedb
+/etc/updatedb.conf
+/etc/alternatives/updatedb
+/etc/alternatives/updatedb.8.gz
+/usr/bin/updatedb
+/usr/bin/updatedb.mlocate
+/usr/share/man/man5/updatedb.conf.5.gz
+/usr/share/man/man8/updatedb.8.gz
+/usr/share/man/man8/updatedb.mlocate.8.gz
+
+5. dumisani@Dumisani:~/Desktop$ cd -
+/home/dumisani/Documents
+
+6. dumisani@Dumisani:~/Documents$ locate pad_copy.md
+/home/dumisani/Desktop/pad_copy.md
+
+Task 6
+
+1. dumisani@Dumisani:~$ find  -name *.pdf
+./pdf_results.pdf
+
+2. dumisani@Dumisani:~$ find  -name *.pdf >> pdf-results.md
+
+3. dumisani@Dumisani:~$ find . -mtime -1 -print
+.
+./workspace
+./workspace/CHANGELOG.md
+./workspace/umuzi.md
+./workspace/recruits.md
+./workspace/READ.md
+./workspace/cohort.md
+./workspace/summary.md
+./umuzi.md
+./recruits.md
+./cat
+./mkdir
+./.bash_history
+./pdf-results.md
+./pdf_results.pdf
+./cohort.md
+./.xsession-errors
+./search_results.md
+./.local/share
+./.local/share/keyrings
+./.local/share/keyrings/login.keyring
+./.local/share/gvfs-metadata
+./.local/share/gvfs-metadata/home-839b91c3.log
+./.local/share/gvfs-metadata/trash:-b50c2bb0.log
+./.local/share/gvfs-metadata/home
+./.local/share/gvfs-metadata/root
+./.local/share/gvfs-metadata/root-4a2df0a5.log
+./.local/share/gvfs-metadata/trash:
+./.linuxmint/mintMenu/apt.cache
+./.linuxmint/mintMenu/applications.list
+./.linuxmint/mintMenu/recentApplications.list
+./.Xauthority
+./summary.md
+./Desktop
+./Desktop/pad_copy.md
+./Desktop/work
+./Downloads
+./Downloads/VSCodeUserSetup-ia32-1.39.2 (1).exe
+./.ICEauthority
+./Documents
+./Documents/pad.md
+
+
+Task 7
+
+1. dumisani@Dumisani:~$ nano my_bio.md
+
+2. dumisani@Dumisani:~$ mkdir my_files
+   dumisani@Dumisani:~$ mv my_bio.md my_files
+
+
+
+
+
+
+
+
+
